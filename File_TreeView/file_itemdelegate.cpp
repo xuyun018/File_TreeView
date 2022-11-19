@@ -228,7 +228,8 @@ void File_ItemDelegate::DrawButton(QPainter *painter, QRect &rect, const QModelI
     width = rect.width();
     height = rect.height();
 
-    left = top = (height - buttonheight) / 2;
+    left = (width - buttonwidth) / 2;
+    top = (height - buttonheight) / 2;
 
     x = rect.left() + left;
     y = rect.top() + top;
